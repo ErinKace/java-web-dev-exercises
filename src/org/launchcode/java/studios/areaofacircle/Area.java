@@ -10,7 +10,7 @@ public class Area {
 //        }
         System.out.println("Enter the radius of the circle: ");
 
-        while (!input.hasNextDouble() || (input.nextDouble() < 0)) {
+        if (!input.hasNextDouble() || (input.nextDouble() < 0)) {
             System.out.println("Please enter a positive number: ");
         }
         double radius = input.nextDouble();
